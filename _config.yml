@@ -40,6 +40,7 @@ baseurl: "/SamarthKalanke" # the subpath of your site, e.g. "/blog".
 minima:
   social_links:
     twitter: fastdotai
+    instagram: kalankesamarth
     github: fastai
 
 # Set this to true to get LaTeX math equation support
