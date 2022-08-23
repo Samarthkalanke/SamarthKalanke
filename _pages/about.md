@@ -1,11 +1,11 @@
 ---
 layout: page
-title: About Me
+title: About Samarth
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+Samarth is a student in APCSP trying to learns the ins and outs of a computer **[Samarth Kalanke](https://github.com/Samarthkalanke/SamarthKalanke)** [^1].
 
 
 
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+[^1]:Someone who wants to learn and grow in this field who wants to create an amazing foundation.
