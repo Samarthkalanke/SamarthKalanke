@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Samarth
+title: CSP notes
 permalink: /about/
 ---
 
