@@ -3,8 +3,8 @@
 	"file": "style.css",
 	"sources": [
 		"style.scss",
-		"../../tmp/jekyll-remote-theme-20220903-1-b50x54/_sass/jekyll-theme-slate.scss",
-		"../../tmp/jekyll-remote-theme-20220903-1-b50x54/_sass/rouge-github.scss"
+		"../../tmp/jekyll-remote-theme-20220903-1-1acusqq/_sass/jekyll-theme-slate.scss",
+		"../../tmp/jekyll-remote-theme-20220903-1-1acusqq/_sass/rouge-github.scss"
 	],
 	"sourcesContent": [
 		"@import \"jekyll-theme-slate\";\n",
