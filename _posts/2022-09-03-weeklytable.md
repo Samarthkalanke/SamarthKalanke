@@ -14,7 +14,7 @@ description: HTML schedule
 {% assign issues = "https://github.com/nighthawkcoders/APCSP/issues" %}
 
 ## Introduction to Samarth's Schedule
-> This is the first 3 weeks of my schedule. 
+> This is the first 3 weeks of my schedule for APCSP. 
 
 <tr>
     <td>
