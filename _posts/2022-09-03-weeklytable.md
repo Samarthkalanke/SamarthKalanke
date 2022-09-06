@@ -16,6 +16,8 @@ description: HTML schedule
 ## Introduction to Samarth's Schedule
 > This is the first 3 weeks of my schedule for APCSP. 
 
+
+<table>
 <tr>
     <td>
         2
@@ -50,3 +52,4 @@ description: HTML schedule
         We installed Anaconda, python, vscode and WSl. 
     </td>
 </tr>
+</table>
