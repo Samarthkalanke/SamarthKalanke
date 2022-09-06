@@ -1,7 +1,10 @@
 ---
-layout: page
+layout: post
 permalink: /schedule
 title: Schedule
+categories: [HTML]
+toc: true
+description: HTML schedule
 ---
 
 
@@ -22,7 +25,7 @@ title: Schedule
     </td>
     <td>
 
-    Me and my partner did more in the seperapte languages in.
+    Me and my partner did more in the seperate languages in.
     </td>
 </tr>
 
