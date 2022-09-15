@@ -38,7 +38,7 @@ Step 2 When `Click to start` is pressed then
 Step 3 Count of correct answers is shown  
 
 ## Finished Project
-"[NBA quiz]""(https://studio.code.org/projects/applab/47LwS3GO9tykHSCOZzyzCLF3eLhMpb9ikMuqrc2sthI/edit)"
+[NBA quiz](https://studio.code.org/projects/applab/47LwS3GO9tykHSCOZzyzCLF3eLhMpb9ikMuqrc2sthI/edit)
 
 
 
