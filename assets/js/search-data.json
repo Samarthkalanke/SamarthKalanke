@@ -2,6 +2,28 @@
   
     
         "post0": {
+            "title": "Table",
+            "content": "&lt;!DOCTYPE html&gt; . Home Group Roles-HTML Table . Names Grade Group Role . Samarth | 10th | Scrum Master | . AJ | 10th | Frontend Developer | . Paaras | 10th | DevOps | . Houxan | 10th | Backend Developer | . .",
+            "url": "https://samarthkalanke.github.io/SamarthKalanke/2022/09/27/table.html",
+            "relUrl": "/2022/09/27/table.html",
+            "date": " • Sep 27, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
+            "title": "NBA quiz",
+            "content": "Notes . Design . Purpose . The test that I made was on basic information about the NBA I wanted to make a test that had the variable score and it would keep on getting bigger or smaller based on wether your answer was right I wanted to have every question about the NBA but just the basics of it I used the on event to activate the quiz and change between screens when a button was clicked At the end I wanted the test to tell the score that you got once the button was clicked . Data Abstraction . I got the Data from google I put the questions and the answers in the design tab of code.org . Managing Complexity . I made a score variable that kept track of score and goes down or up based on if they clicked the right answer. If they clicked the right answer it took them to a right answer page and the same thing for if they clicked the wrong answer. At the end I made it so that it will give the percentage of your correct anserwers when a button is clicked on . Algorithim Implemantion . Step 1 Display home page Step 2 When Click to start is pressed then Step 2.1 next quiz question shows with the MC answers Step 2.2 When correct answer is selceted then Step 2.2.1 Correct page is displayed Step 2.2.2 the score variable increases by 1 Step 2.3 else Step 2.3.1 incorrect page is shown Step 2.4 go to step 2.1 and repeat for all 3 questions Step 3 Count of correct answers is shown . Finished Project . NBA quiz . var score = 0; onEvent(&quot;startButton&quot;, &quot;click&quot;, function( ) { console.log(&quot;startbutton clicked&quot;); setScreen(&quot;quiz1&quot;); playSpeech(&quot;Quiz Started&quot;, &quot;male&quot;, &quot;English&quot;); }); onEvent(&quot;correct1&quot;, &quot;click&quot;, function( ) { score = score += 1; setScreen(&quot;CorrectContinue&quot;); onEvent(&quot;Correct&quot;, &quot;click&quot;, function( ) { setScreen(&quot;quiz2&quot;); }); }); onEvent(&quot;incorrect1quiz1&quot;, &quot;click&quot;, function( ) { score = score -= 1; setScreen(&quot;IncorrectContinue&quot;); onEvent(&quot;Incorrect&quot;, &quot;click&quot;, function( ) { setScreen(&quot;quiz2&quot;); }); }); onEvent(&quot;incorrect2quiz1&quot;, &quot;click&quot;, function( ) { score = score -= 1; setScreen(&quot;IncorrectContinue&quot;); onEvent(&quot;Incorrect&quot;, &quot;click&quot;, function( ) { setScreen(&quot;quiz2&quot;); }); }); onEvent(&quot;incorrect3quiz1&quot;, &quot;click&quot;, function( ) { score = score -= 1; setScreen(&quot;IncorrectContinue&quot;); onEvent(&quot;Incorrect&quot;, &quot;click&quot;, function( ) { setScreen(&quot;quiz2&quot;); }); }); onEvent(&quot;correctquiz2&quot;, &quot;click&quot;, function( ) { score = score += 1; setScreen(&quot;CorrectContinue&quot;); onEvent(&quot;Correct&quot;, &quot;click&quot;, function( ) { setScreen(&quot;quiz3&quot;); }); }); onEvent(&quot;incorrect1quiz2&quot;, &quot;click&quot;, function( ) { score = score -= 1; setScreen(&quot;IncorrectContinue&quot;); onEvent(&quot;Incorrect&quot;, &quot;click&quot;, function( ) { setScreen(&quot;quiz3&quot;); }); }); onEvent(&quot;correct3&quot;, &quot;click&quot;, function( ) { score = score += 1; setScreen(&quot;CorrectContinue&quot;); onEvent(&quot;Correct&quot;, &quot;click&quot;, function( ) { setScreen(&quot;finallesui&quot;); }); }); onEvent(&quot;incorrect1quiz3&quot;, &quot;click&quot;, function( ) { score = score -= 1; setScreen(&quot;IncorrectContinue&quot;); onEvent(&quot;Incorrect&quot;, &quot;click&quot;, function( ) { playSound(&quot;sound://default.mp3&quot;, false); setScreen(&quot;finallesui&quot;); }); }); onEvent(&quot;finallesui&quot;, &quot;click&quot;, function( ) { console.log(score); var finalscore = score/3 *100 + &quot;%&quot;; setText(&quot;label&quot;, finalscore); }); onEvent(&quot;label1&quot;, &quot;click&quot;, function( ) { console.log(&quot;label1 clicked!&quot;); }); .",
+            "url": "https://samarthkalanke.github.io/SamarthKalanke/2022/09/27/javaproof.html",
+            "relUrl": "/2022/09/27/javaproof.html",
+            "date": " • Sep 27, 2022"
+        }
+        
+    
+  
+    
+        ,"post2": {
             "title": "Notes for Yale Video",
             "content": "Video notes and Vocab . Enerprise: A project that is difficult and requires effort Our life circumstances don’t matter as much as we think Intuitions: We can understand things without conscious reasoning Taking care of happines doesn’t work without putting practices to work GI Joe Fantasy: Simply knowing about a bias is enough to pu tthe idea into practice The mind mugs up about what it means to be happy. It often lies Happy people make time for connections Sleeping is good Savoring the moment is often better Affluence: The state of having a great deal of money Be affluent in time Happy people prioritize time over money . List of Gratitude . People I am greatful for My family My friends Andrew Tate . Goals Get all As Do all my things outside of school well Pursue any hobbies that I have . Not of Gratitue: . I am grateful for my team in CSP. Paaras, Houshin, and AJ are all really smart people and I enjoy working with them. .",
             "url": "https://samarthkalanke.github.io/SamarthKalanke/notes/2022/09/21/Yale-Vidnotes.html",
@@ -12,7 +34,7 @@
     
   
     
-        ,"post1": {
+        ,"post3": {
             "title": "Notes for AP Classroom",
             "content": "Video 1.1 Pt1 Notes . Companies use collaboration for inovation and this shows parts of every collaborator Inovations can be tangible or intangible Collaboration that has multiple people waters down bias Effective collaboration prduces a computing innoavation the reflecst the diversity of talents . Video 1.1 Pt2 Notes . Pair Programming a way that every person has a job and a certain role Think-pair-share A methode that breaks everyones thinking down to make the job easier Leave Comments Allows everyone to know each others flaw .",
             "url": "https://samarthkalanke.github.io/SamarthKalanke/notes/2022/09/21/Notes-for-AP-Classroom.html",
@@ -23,7 +45,7 @@
     
   
     
-        ,"post2": {
+        ,"post4": {
             "title": "NBA quiz",
             "content": "Notes . Design . Purpose . The test that I made was on basic information about the NBA I wanted to make a test that had the variable score and it would keep on getting bigger or smaller based on wether your answer was right I wanted to have every question about the NBA but just the basics of it I used the on event to activate the quiz and change between screens when a button was clicked At the end I wanted the test to tell the score that you got once the button was clicked . Data Abstraction . I got the Data from google I put the questions and the answers in the design tab of code.org . Managing Complexity . I made a score variable that kept track of score and goes down or up based on if they clicked the right answer. If they clicked the right answer it took them to a right answer page and the same thing for if they clicked the wrong answer. At the end I made it so that it will give the percentage of your correct anserwers when a button is clicked on . Algorithim Implemantion . Step 1 Display home page Step 2 When Click to start is pressed then Step 2.1 next quiz question shows with the MC answers Step 2.2 When correct answer is selceted then Step 2.2.1 Correct page is displayed Step 2.2.2 the score variable increases by 1 Step 2.3 else Step 2.3.1 incorrect page is shown Step 2.4 go to step 2.1 and repeat for all 3 questions Step 3 Count of correct answers is shown . Finished Project . NBA quiz .",
             "url": "https://samarthkalanke.github.io/SamarthKalanke/quiz/2022/09/14/design-for-project.html",
@@ -34,7 +56,7 @@
     
   
     
-        ,"post3": {
+        ,"post5": {
             "title": "Schedule",
             "content": "Introduction to Samarth’s Schedule . This is the first 3 weeks of my schedule for APCSP. . 2 | Data Abstraction | Me and my partner did more in the seperate languages in. | . 1 | Introduction to Python | We made a quiz in Python and used Bash for the tool check as well. | . 0 | Tool Setup | We installed Anaconda, python, vscode and WSl. | .",
             "url": "https://samarthkalanke.github.io/SamarthKalanke/schedule",
@@ -45,7 +67,7 @@
     
   
     
-        ,"post4": {
+        ,"post6": {
             "title": "my theme changes",
             "content": "This is my theme change. .",
             "url": "https://samarthkalanke.github.io/SamarthKalanke/hacks/2022/09/03/themechangepic.html",
@@ -56,7 +78,7 @@
     
   
     
-        ,"post5": {
+        ,"post7": {
             "title": "Week 2 hacks",
             "content": "myDict = [] myDict.append({ &quot;FirstName&quot;: &quot;Samarth&quot;, &quot;LastNameInitial&quot;: &quot;K.&quot;, &quot;DOB&quot;: &quot;October 19&quot;, &quot;Residence&quot;: &quot;San Diego&quot;, &quot;Family Members&quot;: &quot;4&quot;, &quot;Age&quot;: &quot;15&quot; }) myDict.append({ &quot;FirstName&quot;: &quot;Paaras&quot;, &quot;LastNameInitial&quot;: &quot;P.&quot;, &quot;DOB&quot;: &quot;June 9&quot;, &quot;Residence&quot;: &quot;San Diego&quot;, &quot;Family Members&quot;: &quot;1&quot;, &quot;Age&quot;: &quot;15&quot; }) . [{&#39;FirstName&#39;: &#39;Samarth&#39;, &#39;LastNameInitial&#39;: &#39;K.&#39;, &#39;DOB&#39;: &#39;October 19&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;Family Members&#39;: &#39;4&#39;, &#39;Age&#39;: &#39;15&#39;}, {&#39;FirstName&#39;: &#39;Paaras&#39;, &#39;LastNameInitial&#39;: &#39;P.&#39;, &#39;DOB&#39;: &#39;June 9&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;Family Members&#39;: &#39;1&#39;, &#39;Age&#39;: &#39;15&#39;}] Looped data below Samarth K. DOB: October 19 Residence: San Diego Family Members: 4 Age: 15 Paaras P. DOB: June 9 Residence: San Diego Family Members: 1 Age: 15 . myDict = [] myDict.append({ &quot;FirstName&quot;: &quot;Samarth&quot;, &quot;LastNameInitial&quot;: &quot;K.&quot;, &quot;DOB&quot;: &quot;October 19&quot;, &quot;Residence&quot;: &quot;San Diego&quot;, &quot;Family Members&quot;: &quot;4&quot;, &quot;Age&quot;: &quot;15&quot; }) myDict.append({ &quot;FirstName&quot;: &quot;Paaras&quot;, &quot;LastNameInitial&quot;: &quot;P.&quot;, &quot;DOB&quot;: &quot;June 9&quot;, &quot;Residence&quot;: &quot;San Diego&quot;, &quot;Family Members&quot;: &quot;1&quot;, &quot;Age&quot;: &quot;15&quot; }) for i in range(len(myDict)): print(myDict[i-1]) . {&#39;FirstName&#39;: &#39;Paaras&#39;, &#39;LastNameInitial&#39;: &#39;P.&#39;, &#39;DOB&#39;: &#39;June 9&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;Family Members&#39;: &#39;1&#39;, &#39;Age&#39;: &#39;15&#39;} {&#39;FirstName&#39;: &#39;Samarth&#39;, &#39;LastNameInitial&#39;: &#39;K.&#39;, &#39;DOB&#39;: &#39;October 19&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;Family Members&#39;: &#39;4&#39;, &#39;Age&#39;: &#39;15&#39;} . dictionary = ({ &quot;What is 1+1 &quot;: &quot;5&quot;, &quot;What is the meaning of life &quot;: &quot;420&quot;, &quot;What is happiness &quot;: &quot;nonexistent&quot;, }) score = 0 for key,value in dictionary.items(): questions = input(f&quot;{key}&quot;) if questions == value: print(&quot;Correct&quot;) score += 1 else: print(&quot;Incorrect&quot;) print(score) . Correct Correct Correct 3 .",
             "url": "https://samarthkalanke.github.io/SamarthKalanke/fastpages/2022/09/03/dictionarytest.html",
@@ -67,7 +89,7 @@
     
   
     
-        ,"post6": {
+        ,"post8": {
             "title": "Title",
             "content": ". toc: true layout: post description: A minimal example of using markdown with fastpages. categories: [markdown] . title: basketball quiz . Basketabll quiz . from http.client import GATEWAY_TIMEOUT points= 0 answer = input(&quot;What does NBA stand for? &quot;) print(answer) if answer == &quot;National Basketball Association&quot;: print (&quot;nice job that&#39;s correct&quot;) points += 1 else: print (&quot;sorry that&#39;s incorrect&quot;) points -= 0 answer = input(&quot;Who is the NBA&#39;s commisioner? &quot;) print(answer) if answer == &quot;Adam Silver&quot;: print (&quot;nice job that&#39;s correct&quot;) points += 1 else: print (&quot;sorry that&#39;s incorrect&quot;) points -= 0 answer = input(&quot;What is the WNBA&quot;) print(answer) if answer == &quot;irrelevant&quot;: print (&quot;nice job that&#39;s correct&quot;) points += 1 else: print (&quot;sorry that&#39;s incorrect&quot;) points -= 0 . National Basketball Association nice job that&#39;s correct Adam Silver nice job that&#39;s correct hi sorry that&#39;s incorrect .",
             "url": "https://samarthkalanke.github.io/SamarthKalanke/2022/08/30/quizzes.html",
@@ -78,7 +100,7 @@
     
   
     
-        ,"post7": {
+        ,"post9": {
             "title": "Other Classwork",
             "content": "This is my myconnect for AP Chemistry https://poway.instructure.com/courses/126331 . This is my myconnect for AP Calculus https://poway.instructure.com/courses/126842 .",
             "url": "https://samarthkalanke.github.io/SamarthKalanke/markdown/2022/08/29/Otherclasswork.html",
@@ -89,7 +111,7 @@
     
   
     
-        ,"post8": {
+        ,"post10": {
             "title": "Zapost1",
             "content": "Killua Zolldyck HunterXHunter . He is a 11 year old assain with lightning abilites and an overpowered family . .",
             "url": "https://samarthkalanke.github.io/SamarthKalanke/2022/08/26/zapost1.html",
@@ -100,18 +122,18 @@
     
   
     
-        ,"post9": {
-            "title": "Blog Post1",
-            "content": "Hello everyone! . My name is Samarth Kalanke and I am doing the class APCSP. How was your day? 1+1=5. . .",
-            "url": "https://samarthkalanke.github.io/SamarthKalanke/2022/08/23/blog-post1.html",
-            "relUrl": "/2022/08/23/blog-post1.html",
+        ,"post11": {
+            "title": "Title",
+            "content": "print(&quot;hello there&quot;) . hello there .",
+            "url": "https://samarthkalanke.github.io/SamarthKalanke/2022/08/23/blogpost1.html",
+            "relUrl": "/2022/08/23/blogpost1.html",
             "date": " • Aug 23, 2022"
         }
         
     
   
     
-        ,"post10": {
+        ,"post12": {
             "title": "Title",
             "content": "layout: page permalink: /schedule title: Schedule &lt;!-- Canvas Course --&gt; {% assign canvas = &quot;https://poway.instructure.com/courses/127268/assignments&quot; %} {% assign apcsp = &quot;https://nighthawkcoders.github.io/APCSP&quot; %} {% assign issues = &quot;https://github.com/nighthawkcoders/APCSP/issues&quot; %} ## Introduction to Tools and Resources &gt; The initial weeks focus on introducing Tools, Pair Programming, and the AP Resources that we plan to use throughout the year. At the end of Weeks 0-3, students will be exposed to blogging with GitHub Pages; developing with Jupyter Notebooks, Python, JavaScript, HTML, and Code.org AppLab; working with AP classroom and becoming familiar with Create Performance Task project requirements. &lt;table&gt; &lt;tr&gt; &lt;th&gt;Week&lt;/th&gt; &lt;th&gt;Sprint&lt;/th&gt; &lt;th&gt;Human Prep&lt;/th&gt; &lt;th&gt;AP Test Prep&lt;/th&gt; &lt;th&gt;Career Tech&lt;/th&gt; &lt;th&gt;Canvas&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; 3 &lt;/td&gt; &lt;td&gt;&lt;a href=&quot;{{site.baseurl}}/week/3&quot;&gt;Creative Development&lt;/a&gt;&lt;/td&gt; &lt;td&gt; &lt;a href=&quot;{{site.baseurl}}/collegeboard/bria&quot;&gt;How I got a 5!&lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;{{site.baseurl}}/collegeboard/create&quot;&gt;Create Performance Task&lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;{{site.baseurl}}/techtalk/javascript&quot;&gt;JavaScript Tutorial&lt;/a&gt; &lt;br&gt; &lt;a href=&quot;{{site.baseurl}}/techtalk/applab&quot;&gt;Program Design with AppLab&lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;{{apcsp}}/points/3&quot;&gt;Creative Development Points&lt;/a&gt; &lt;br&gt; &lt;a href=&quot;{{issues}}/33&quot;&gt;Review Tickets&lt;/a&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; 2 🚧 &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;{{site.baseurl}}/week/2&quot;&gt;Data Abstraction&lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;{{site.baseurl}}/collegeboard/anthony-and-sahil&quot;&gt;Reflections on Computer Science&lt;/a&gt; &lt;br/&gt; Alumni Panel (extra credit) &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;{{site.baseurl}}/collegeboard/python_lists&quot;&gt;Python Lists and Dictionaries&lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;{{site.baseurl}}/techtalk/html&quot;&gt;HTML Fragments and Layouts&lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;{{apcsp}}/points/2&quot;&gt;Data Abstraction Points&lt;/a&gt; &lt;br&gt; &lt;a href=&quot;{{issues}}/22&quot;&gt;Review Tickets&lt;/a&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; 1 💰 &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;{{site.baseurl}}/week/1&quot;&gt;Introduction to Python&lt;/a&gt; &lt;/td&gt; &lt;td&gt; Table Visits &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;{{site.baseurl}}/collegeboard/python&quot;&gt;Hello to Python&lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;{{site.baseurl}}/techtalk/bash&quot;&gt;Bash and Checks&lt;/a&gt; &lt;br&gt; &lt;a href=&quot;{{site.baseurl}}/techtalk/fastpages&quot;&gt;Fastpages, Jupyter Notebooks, Markdown&lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;{{canvas}}/2296689&quot;&gt;Intro Python, Jupyter, Fastpages&lt;/a&gt; &lt;br&gt; &lt;a href=&quot;{{issues}}/21&quot;&gt;Review Tickets&lt;/a&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; 0 💰 &lt;/td&gt; &lt;td&gt;&lt;a href=&quot;{{site.baseurl}}/week/0&quot;&gt;Tool Setup&lt;/a&gt;&lt;/td&gt; &lt;td&gt; &lt;a href=&quot;{{site.baseurl}}/collegeboard/history&quot;&gt;Scoring History&lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;{{site.baseurl}}/collegeboard/pseudo_code&quot;&gt;Pseudo Code&lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;{{site.baseurl}}/techtalk/tools&quot;&gt;Tools and Equipment&lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;{{canvas}}/2206627&quot;&gt;Tools Setup&lt;/a&gt; &lt;br&gt; &lt;a href=&quot;{{issues}}/11&quot;&gt;Review Tickets&lt;/a&gt; &lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; ## Introduction to Web Development &gt; Websites are made up of three key parts: Frontend, Backend, and Deployment. The focus for these weeks is to enable students to perform all the aspects of constructing constructing and deploying a Website. Fastpages got us started on these concepts, but now we will build a Website from the ground up. Once again, there will be a lot of learning focused tools and getting things working. But, in the end, students will be ready to learn all aspects of Website Development. &lt;table&gt; &lt;tr&gt; &lt;th&gt;Week&lt;/th&gt; &lt;th&gt;Sprint&lt;/th&gt; &lt;th&gt;Human Prep&lt;/th&gt; &lt;th&gt;AP Test Prep&lt;/th&gt; &lt;th&gt;Career Tech&lt;/th&gt; &lt;th&gt;Canvas&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;6&lt;/td&gt; &lt;td&gt; &lt;a href=&quot;&quot;&gt;Deployment: AWS, Docker, Nginx&lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;{{site.baseurl}}/techtalk/agile&quot;&gt;Agile and Roles&lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;https://apclassroom.collegeboard.org/103/home?unit=1&quot;&gt;1.3 Program Design and Development&lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;{{site.baseurl}}/techtalk/bash&quot;&gt;Bash Introduction&lt;/a&gt;, &lt;a href=&quot;{{site.baseurl}}/techtalk/deploy&quot;&gt;Deployment Guide&lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;5&lt;/td&gt; &lt;td&gt; &lt;a href=&quot;&quot;&gt;Backend Development: Flask/Python &lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;{{site.baseurl}}/techtalk/focus&quot;&gt;Focus and Habits&lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;https://apclassroom.collegeboard.org/103/home?unit=1&quot;&gt;1.2 Program Function and Purpose&lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;{{site.baseurl}}/techtalk/webapi&quot;&gt;Python API Endpoints using Jokes&lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;4&lt;/td&gt; &lt;td&gt; &lt;a href=&quot;&quot;&gt;Frontend Development: HTML/JavaScript &lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;{{site.baseurl}}/collegeboard/anthony-and-sahil&quot;&gt;Reflections on Computer Science&lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;https://apclassroom.collegeboard.org/103/home?unit=1&quot;&gt;1.1 Collaboration&lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;a href=&quot;{{site.baseurl}}/frontend/overview.html&quot;&gt;Frontend with Fastpages&lt;/a&gt; &lt;/td&gt; &lt;td&gt; &lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; ## Fundamental of Programming and Algorithms &gt; The tough solutions to problems in Computer Science generally require an algorithm. Each algorithm usually involves data, for instance Data Science is a field that focuses on data with algorithms. The next few week focuses on some very detailed algorithms, but we hope to express these details visually with our Web and Blogging capabilities. Data and binary are sometimes considered boring, but we produce data with analytics or learn to alter the internals of images, the data and algorithms can become VERY interesting. &lt;table&gt; &lt;tr&gt; &lt;th&gt;Week&lt;/th&gt; &lt;th&gt;Sprint&lt;/th&gt; &lt;th&gt;Human Prep&lt;/th&gt; &lt;th&gt;AP Test Prep&lt;/th&gt; &lt;th&gt;Career Tech&lt;/th&gt; &lt;th&gt;Canvas&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;10&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;&quot;&gt;Algorithms for Images&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://apclassroom.collegeboard.org/103/home?unit=2&quot;&gt;2.2 Data Compression&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;&quot;&gt;Image Manipulations (TBD)&lt;/a&gt;&lt;/td&gt; &lt;td&gt;TBD&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;9&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;&quot;&gt;Working with Images&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://apclassroom.collegeboard.org/103/home?unit=2&quot;&gt;2.3 Extracting Information from Data&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://csp.nighthawkcodingsociety.com/starter/rgb/&quot;&gt;RGB Values and Base64&lt;/a&gt;&lt;/td&gt; &lt;td&gt;TBD&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;8&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;&quot;&gt;Working with Binary&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://apclassroom.collegeboard.org/103/home?unit=2&quot;&gt;2.1 Binary Numbers&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;{{site.baseurl}}/frontend/binary&quot;&gt;Binary Calculator ASCII, Base 2, 8, 16 (TBD)&lt;/a&gt;&lt;/td&gt; &lt;td&gt;TBD&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;7&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;&quot;&gt;Methodology: Test Driven Development&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://apclassroom.collegeboard.org/103/home?unit=1&quot;&gt;1.4 Identifying and Correcting Errors&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;{{site.baseurl}}/api/overview&quot;&gt;Frontend and Backend APIs&lt;/a&gt;&lt;/td&gt; &lt;td&gt;TBD&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; .",
             "url": "https://samarthkalanke.github.io/SamarthKalanke/2022/03/09/schedule.html",
@@ -122,7 +144,7 @@
     
   
     
-        ,"post11": {
+        ,"post13": {
             "title": "Fastpages Notebook Blog Post",
             "content": "About . This notebook is a demonstration of some of capabilities of fastpages with notebooks. . With fastpages you can save your jupyter notebooks into the _notebooks folder at the root of your repository, and they will be automatically be converted to Jekyll compliant blog posts! . Front Matter . The first cell in your Jupyter Notebook or markdown blog post contains front matter. Front matter is metadata that can turn on/off options in your Notebook. It is formatted like this: . # &quot;My Title&quot; &gt; &quot;Awesome summary&quot; - toc:true- branch: master - badges: true - comments: true - author: Hamel Husain &amp; Jeremy Howard - categories: [fastpages, jupyter] . Setting toc: true will automatically generate a table of contents | Setting badges: true will automatically include GitHub and Google Colab links to your notebook. | Setting comments: true will enable commenting on your blog post, powered by utterances. | . The title and description need to be enclosed in double quotes only if they include special characters such as a colon. More details and options for front matter can be viewed on the front matter section of the README. . Markdown Shortcuts . A #hide comment at the top of any code cell will hide both the input and output of that cell in your blog post. . A #hide_input comment at the top of any code cell will only hide the input of that cell. . The comment #hide_input was used to hide the code that produced this. . put a #collapse-hide flag at the top of any cell if you want to hide that cell by default, but give the reader the option to show it: . import pandas as pd import altair as alt . . put a #collapse-show flag at the top of any cell if you want to show that cell by default, but give the reader the option to hide it: . cars = &#39;https://vega.github.io/vega-datasets/data/cars.json&#39; movies = &#39;https://vega.github.io/vega-datasets/data/movies.json&#39; sp500 = &#39;https://vega.github.io/vega-datasets/data/sp500.csv&#39; stocks = &#39;https://vega.github.io/vega-datasets/data/stocks.csv&#39; flights = &#39;https://vega.github.io/vega-datasets/data/flights-5k.json&#39; . . place a #collapse-output flag at the top of any cell if you want to put the output under a collapsable element that is closed by default, but give the reader the option to open it: . print(&#39;The comment #collapse-output was used to collapse the output of this cell by default but you can expand it.&#39;) . The comment #collapse-output was used to collapse the output of this cell by default but you can expand it. . . Interactive Charts With Altair . Charts made with Altair remain interactive. Example charts taken from this repo, specifically this notebook. . Example 1: DropDown . # use specific hard-wired values as the initial selected values selection = alt.selection_single( name=&#39;Select&#39;, fields=[&#39;Major_Genre&#39;, &#39;MPAA_Rating&#39;], init={&#39;Major_Genre&#39;: &#39;Drama&#39;, &#39;MPAA_Rating&#39;: &#39;R&#39;}, bind={&#39;Major_Genre&#39;: alt.binding_select(options=genres), &#39;MPAA_Rating&#39;: alt.binding_radio(options=mpaa)} ) # scatter plot, modify opacity based on selection alt.Chart(df).mark_circle().add_selection( selection ).encode( x=&#39;Rotten_Tomatoes_Rating:Q&#39;, y=&#39;IMDB_Rating:Q&#39;, tooltip=&#39;Title:N&#39;, opacity=alt.condition(selection, alt.value(0.75), alt.value(0.05)) ) . Example 2: Tooltips . alt.Chart(df).mark_circle().add_selection( alt.selection_interval(bind=&#39;scales&#39;, encodings=[&#39;x&#39;]) ).encode( alt.X(&#39;Rotten_Tomatoes_Rating&#39;, type=&#39;quantitative&#39;), alt.Y(&#39;IMDB_Rating&#39;, type=&#39;quantitative&#39;, axis=alt.Axis(minExtent=30)), # y=alt.Y(&#39;IMDB_Rating:Q&#39;, ), # use min extent to stabilize axis title placement tooltip=[&#39;Title:N&#39;, &#39;Release_Date:N&#39;, &#39;IMDB_Rating:Q&#39;, &#39;Rotten_Tomatoes_Rating:Q&#39;] ).properties( width=500, height=400 ) . Example 3: More Tooltips . label = alt.selection_single( encodings=[&#39;x&#39;], # limit selection to x-axis value on=&#39;mouseover&#39;, # select on mouseover events nearest=True, # select data point nearest the cursor empty=&#39;none&#39; # empty selection includes no data points ) # define our base line chart of stock prices base = alt.Chart().mark_line().encode( alt.X(&#39;date:T&#39;), alt.Y(&#39;price:Q&#39;, scale=alt.Scale(type=&#39;log&#39;)), alt.Color(&#39;symbol:N&#39;) ) alt.layer( base, # base line chart # add a rule mark to serve as a guide line alt.Chart().mark_rule(color=&#39;#aaa&#39;).encode( x=&#39;date:T&#39; ).transform_filter(label), # add circle marks for selected time points, hide unselected points base.mark_circle().encode( opacity=alt.condition(label, alt.value(1), alt.value(0)) ).add_selection(label), # add white stroked text to provide a legible background for labels base.mark_text(align=&#39;left&#39;, dx=5, dy=-5, stroke=&#39;white&#39;, strokeWidth=2).encode( text=&#39;price:Q&#39; ).transform_filter(label), # add text labels for stock prices base.mark_text(align=&#39;left&#39;, dx=5, dy=-5).encode( text=&#39;price:Q&#39; ).transform_filter(label), data=stocks ).properties( width=500, height=400 ) . Data Tables . You can display tables per the usual way in your blog: . df[[&#39;Title&#39;, &#39;Worldwide_Gross&#39;, &#39;Production_Budget&#39;, &#39;Distributor&#39;, &#39;MPAA_Rating&#39;, &#39;IMDB_Rating&#39;, &#39;Rotten_Tomatoes_Rating&#39;]].head() . Title Worldwide_Gross Production_Budget Distributor MPAA_Rating IMDB_Rating Rotten_Tomatoes_Rating . 0 The Land Girls | 146083.0 | 8000000.0 | Gramercy | R | 6.1 | NaN | . 1 First Love, Last Rites | 10876.0 | 300000.0 | Strand | R | 6.9 | NaN | . 2 I Married a Strange Person | 203134.0 | 250000.0 | Lionsgate | None | 6.8 | NaN | . 3 Let&#39;s Talk About Sex | 373615.0 | 300000.0 | Fine Line | None | NaN | 13.0 | . 4 Slam | 1087521.0 | 1000000.0 | Trimark | R | 3.4 | 62.0 | . Images . Local Images . You can reference local images and they will be copied and rendered on your blog automatically. You can include these with the following markdown syntax: . ![](my_icons/fastai_logo.png) . . Remote Images . Remote images can be included with the following markdown syntax: . ![](https://image.flaticon.com/icons/svg/36/36686.svg) . . Animated Gifs . Animated Gifs work, too! . ![](https://upload.wikimedia.org/wikipedia/commons/7/71/ChessPawnSpecialMoves.gif) . . Captions . You can include captions with markdown images like this: . ![](https://www.fast.ai/images/fastai_paper/show_batch.png &quot;Credit: https://www.fast.ai/2020/02/13/fastai-A-Layered-API-for-Deep-Learning/&quot;) . . Other Elements . GitHub Flavored Emojis . Typing I give this post two :+1:! will render this: . I give this post two :+1:! . Tweetcards . Typing &gt; twitter: https://twitter.com/jakevdp/status/1204765621767901185?s=20 will render this: Altair 4.0 is released! https://t.co/PCyrIOTcvvTry it with: pip install -U altairThe full list of changes is at https://t.co/roXmzcsT58 ...read on for some highlights. pic.twitter.com/vWJ0ZveKbZ . &mdash; Jake VanderPlas (@jakevdp) December 11, 2019 . Youtube Videos . Typing &gt; youtube: https://youtu.be/XfoYk_Z5AkI will render this: . Boxes / Callouts . Typing &gt; Warning: There will be no second warning! will render this: . Warning: There will be no second warning! . Typing &gt; Important: Pay attention! It&#39;s important. will render this: . Important: Pay attention! It&#8217;s important. . Typing &gt; Tip: This is my tip. will render this: . Tip: This is my tip. . Typing &gt; Note: Take note of this. will render this: . Note: Take note of this. . Typing &gt; Note: A doc link to [an example website: fast.ai](https://www.fast.ai/) should also work fine. will render in the docs: . Note: A doc link to an example website: fast.ai should also work fine. . Footnotes . You can have footnotes in notebooks, however the syntax is different compared to markdown documents. This guide provides more detail about this syntax, which looks like this: . For example, here is a footnote {% fn 1 %}. And another {% fn 2 %} {{ &#39;This is the footnote.&#39; | fndetail: 1 }} {{ &#39;This is the other footnote. You can even have a [link](www.github.com)!&#39; | fndetail: 2 }} . For example, here is a footnote 1. . And another 2 . 1. This is the footnote.↩ . 2. This is the other footnote. You can even have a link!↩ .",
             "url": "https://samarthkalanke.github.io/SamarthKalanke/jupyter/2020/02/20/test.html",
@@ -133,7 +155,7 @@
     
   
     
-        ,"post12": {
+        ,"post14": {
             "title": "An Example Markdown Post",
             "content": "Example Markdown Post . Basic setup . Jekyll requires blog post files to be named according to the following format: . YEAR-MONTH-DAY-filename.md . Where YEAR is a four-digit number, MONTH and DAY are both two-digit numbers, and filename is whatever file name you choose, to remind yourself what this post is about. .md is the file extension for markdown files. . The first line of the file should start with a single hash character, then a space, then your title. This is how you create a “level 1 heading” in markdown. Then you can create level 2, 3, etc headings as you wish but repeating the hash character, such as you see in the line ## File names above. . Basic formatting . You can use italics, bold, code font text, and create links. Here’s a footnote 1. Here’s a horizontal rule: . . Lists . Here’s a list: . item 1 | item 2 | . And a numbered list: . item 1 | item 2 | Boxes and stuff . This is a quotation . . You can include alert boxes …and… . . You can include info boxes Images . . Code . You can format text and code per usual . General preformatted text: . # Do a thing do_thing() . Python code and output: . # Prints &#39;2&#39; print(1+1) . 2 . Formatting text as shell commands: . echo &quot;hello world&quot; ./some_script.sh --option &quot;value&quot; wget https://example.com/cat_photo1.png . Formatting text as YAML: . key: value - another_key: &quot;another value&quot; . Tables . Column 1 Column 2 . A thing | Another thing | . Tweetcards . Altair 4.0 is released! https://t.co/PCyrIOTcvvTry it with: pip install -U altairThe full list of changes is at https://t.co/roXmzcsT58 ...read on for some highlights. pic.twitter.com/vWJ0ZveKbZ . &mdash; Jake VanderPlas (@jakevdp) December 11, 2019 Footnotes . This is the footnote. &#8617; . |",
             "url": "https://samarthkalanke.github.io/SamarthKalanke/markdown/2020/01/14/test-markdown-post.html",
@@ -172,6 +194,22 @@
   
 
   
+      ,"page4": {
+          "title": "Submenu",
+          "content": "&lt;!DOCTYPE html&gt; . . Home Javascript Post Notebook .",
+          "url": "https://samarthkalanke.github.io/SamarthKalanke/_pages/newpage.html",
+          "relUrl": "/_pages/newpage.html",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+
+  
   
 
   
@@ -180,18 +218,13 @@
   
 
   
-
-  
   
 
   
   
 
   
-  
-
-  
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://samarthkalanke.github.io/SamarthKalanke/robots.txt",
