@@ -37,8 +37,8 @@ url: "https://Samarthkalanke.github.io" # the base hostname & protocol for your 
 baseurl: "/SamarthKalanke" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
-minima:
-  skin: dark
+#minima:
+  #skin: dark
   #social_links:
     #twitter: NighthawkCoding
     #github: nighthawkcoders
