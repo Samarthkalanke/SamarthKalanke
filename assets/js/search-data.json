@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "3.3 Video 1 Question1",
-            "content": "print(&quot;Theo is my daddy and i want to eat him up&quot;) print(&quot;Theo daddy said I didn&#39;t have to do 3.3 video 3 hacks because it wasn&#39;t showing up for me&quot;) print(&quot;I put that ong and my mama&quot;) . Theo is my daddy and i want to eat him up . Code Segment 1 . Consider the following code segment: . num1 ⟵ 25 num2 ⟵ 15 num3 ⟵ 30 num2 ⟵ num3 num3 ⟵ num1 num1 ⟵ num2 DISPLAY(num1) . DISPLAY(num2) . DISPLAY(num3) . What is displayed after running this code segment? . 25 15 30 30 30 25 30 15 30 15 30 25 . Answer: 2. because for num 1 the value is replaced by num 3&#39;s value which is 30. For num 2 the value is 30 because its replaced by num 1&#39;s value which was originally 25 but then was replaced by num 3&#39;s value 30. For num 3, the value is 25 because it&#39;s value is replaced by num 2 which num 2&#39;s value was replaced by num 1&#39;s. . Code Segment 2 . Consider the following code segment: . p ⟵ 10 q ⟵ 20 r ⟵ 30 s ⟵ 40 p ⟵ q q ⟵ r s ⟵ q r ⟵ p What is the value of r as a result of running this code segment . 10 20 30 40 . Answer: 2. because q is the variable assigned to p and q&#39;s value is 20 .",
+            "content": "print(&quot;Theo is my daddy and i want to eat him up&quot;) print(&quot;Theo daddy said I didn&#39;t have to do 3.3 video 3 hacks because it wasn&#39;t showing up for me&quot;) print(&quot;I put that ong and my mama&quot;) . Theo is my daddy and i want to eat him up .",
             "url": "https://samarthkalanke.github.io/SamarthKalanke/2022/11/29/Theodaddy.html",
             "relUrl": "/2022/11/29/Theodaddy.html",
             "date": " • Nov 29, 2022"
