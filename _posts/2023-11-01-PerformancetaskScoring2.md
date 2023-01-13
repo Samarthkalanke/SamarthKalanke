@@ -1,30 +1,18 @@
-{
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 3",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "name": "python",
-   "version": "3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]"
-  },
-  "orig_nbformat": 4,
-  "vscode": {
-   "interpreter": {
-    "hash": "b9c3426249d7334374c23b70574cd863c9c4586e94e725b6faba2747af0061b7"
-   }
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 2
-}
+---
+toc: true
+layout: post
+description: A table grading people
+categories: [markdown]
+title: Performance task table
+---
+
+# Student 1
+
+|Reporting Category|Student Score|College Board Score|Comments|
+|---|---|---|---|
+|Program Purpose and Function|1|0|He had all that he needed but just describe|
+|Data Abstraction|1|0|He met all the scoring criteria|
+|Managing Complexity|0|0|He didn't have any of the requirements|
+|Procedral Abstraction|1|0|Had everything he needed to have|
+|Algorithim Implentation|1|0|Had everything that he needed to have|
+|Testing|1|1|Tested correctly and had everything|
