@@ -4,9 +4,6 @@ toc: true
 comments: true
 layout: post
 description: My plans to finish my CPT project for Collegeboard.
-permalink: /CB/CPTplan
-image: /images/cbimage.png
-categories: [week 28, collegeboard, CPT, project, planning]
 ---
 
 # What do I need to Do?
