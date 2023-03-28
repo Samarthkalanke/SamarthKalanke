@@ -15,8 +15,8 @@
         ,"post1": {
             "title": "Collegeboard Practice Problems Corrections and Reflections",
             "content": "Collegeboard . I did this with a friend named Raunak because College board was not working for me. . So we hopped on a discord voice call to finish this together and these were the questions that we got wrong. . Collegeboard Practice Problems for 2.2 . . For Question 1, answer A is incorrect because the ability to keep data secure is not a primary function of a compression algorithm. answer B is correct because lossless compression algorithms are guaranteed to be able to reconstruct the original data, while lossy compression algorithms are not. . Collegeboard Practice Problems for 2.3 . . Additional Practice Quizzes: . On the latter quiz for question 4, Answer D is correct because sorting by year will sort the spreadsheet on column C from least to greatest. Filtering by year will remove any entries with unknown years. Filtering by photographer will remove any entries with unknown photographers. Since the order of the entries is not affected by the filters, the photograph with the lowest year value will be in the first row of the spreadsheet. Answer C is incorrect because this sequence of steps does not remove any entries with an unknown year, so the entry in the first row of the spreadsheet will have a year value of -1. .",
-            "url": "https://samarthkalanke.github.io/SamarthKalanke/markdown/week%2025/collegeboard/2023/03/28/CSPQuiz.ipynb",
-            "relUrl": "/markdown/week%2025/collegeboard/2023/03/28/CSPQuiz.ipynb",
+            "url": "https://samarthkalanke.github.io/SamarthKalanke/markdown/week%2025/collegeboard/2023/03/28/CSPQuiz.html",
+            "relUrl": "/markdown/week%2025/collegeboard/2023/03/28/CSPQuiz.html",
             "date": " • Mar 28, 2023"
         }
         
