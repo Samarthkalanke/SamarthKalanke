@@ -7,7 +7,7 @@
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      3 min read
     
 </span></p>
 
@@ -60,38 +60,151 @@
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">word_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;word&quot;</span><span class="p">]</span>
-<span class="n">letters_inword</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;w&quot;</span><span class="p">,</span><span class="s2">&quot;o&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span><span class="p">]</span>
-<span class="n">guessed_letters</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">word_completion</span> <span class="o">=</span> <span class="s2">&quot;_&quot;</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">word_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> 
 
-<span class="k">def</span> <span class="nf">play_hangman</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">word_completion</span><span class="p">)</span>
-    <span class="n">word_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">word_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-    <span class="n">dash_counter</span> <span class="o">=</span> <span class="n">word_len</span> 
-    <span class="n">strikes</span> <span class="o">=</span> <span class="mi">6</span> 
-    <span class="k">while</span> <span class="n">strikes</span> <span class="o">&lt;</span> <span class="mi">6</span> <span class="ow">or</span> <span class="n">dash_counter</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">guess</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please guess a letter or word: &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="c1"># The list of all the correct words in the game </span>
+<span class="n">word_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;World&quot;</span><span class="p">,</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span><span class="s2">&quot;Alert&quot;</span><span class="p">,</span><span class="s2">&quot;Crane&quot;</span><span class="p">,</span><span class="s2">&quot;Magic&quot;</span><span class="p">,</span><span class="s2">&quot;Extreme&quot;</span><span class="p">]</span>
+<span class="c1"># A list of all the user inputed letters that they have guessed </span>
+<span class="n">guessed_letters</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">global</span> <span class="n">dash_counter</span>
+
+
+<span class="c1"># Function to choose a random word from the list</span>
+<span class="k">def</span> <span class="nf">get_random_word_from_the_word_list</span><span class="p">():</span>
+    <span class="n">chosen_word</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">word_list</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">chosen_word</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">play_word_guessing_game</span><span class="p">(</span><span class="n">chosen_word</span><span class="p">):</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;hint :&quot;</span><span class="p">,</span> <span class="n">chosen_word</span><span class="p">)</span> <span class="c1">#DELETE after</span>
+    <span class="n">word_solved_so_far</span> <span class="o">=</span> <span class="s2">&quot;_&quot;</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">chosen_word</span><span class="p">)</span> <span class="c1">#All the letters will be substituted for dashes in the beginning</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;welcome to the game</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Guess the word in 6 attempts</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">word_solved_so_far</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">word_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">word_list</span><span class="p">)</span> <span class="c1"># We are finding the length of the word </span>
+    <span class="n">dash_counter</span> <span class="o">=</span> <span class="n">word_len</span> <span class="c1"># dash_counter shows how many letters are not guessed </span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;dash counter &quot;</span><span class="p">,</span> <span class="n">dash_counter</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span> 
+
+    <span class="n">strikes</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1">#Shows unsuccessful atempts allowed in the game, it is 6 because that is the rule of the game</span>
+    <span class="c1"># Strkies &lt; 6 or dash_counter &gt; 0  means the game runs when there is still strikes or the word is still unsolved </span>
+    <span class="k">while</span> <span class="n">strikes</span> <span class="o">&lt;</span> <span class="mi">6</span> <span class="ow">or</span> <span class="n">dash_counter</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span> 
+        <span class="n">guess</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please guess a letter in the word: &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+        <span class="c1"># check if only one letter is input and it is a valid alphabet</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">guess</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">guess</span><span class="o">.</span><span class="n">isalpha</span><span class="p">():</span>
+            <span class="c1"># If the letter has already been guessed by the user it will tell the user and not mark it as a strike and let him enter again</span>
             <span class="k">if</span> <span class="n">guess</span> <span class="ow">in</span> <span class="n">guessed_letters</span><span class="p">:</span>
                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You already guessed the letter&quot;</span><span class="p">,</span> <span class="n">guess</span><span class="p">)</span>
                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-            <span class="k">elif</span> <span class="n">guess</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">word_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
-                <span class="nb">print</span><span class="p">(</span><span class="n">guess</span><span class="p">,</span> <span class="s2">&quot;is not in the word.&quot;</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">guess</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">chosen_word</span><span class="p">:</span>
+                <span class="c1"># If the user guessed letter is not in the word a strike is deducted and it informs the user and lets the user guess again</span>
+                <span class="nb">print</span><span class="p">(</span><span class="n">guess</span><span class="p">,</span> <span class="s2">&quot;is not in the word. Strike &quot;</span><span class="p">,</span> <span class="n">strikes</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-                <span class="n">strikes</span> <span class="o">-=</span> <span class="mi">1</span>
+                <span class="n">strikes</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="c1"># Adds letter that user guessed to list</span>
                 <span class="n">guessed_letters</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">guess</span><span class="p">)</span>
             <span class="k">else</span><span class="p">:</span>
-                <span class="n">check_hangman</span><span class="p">(</span><span class="n">guess</span><span class="p">)</span>
+                <span class="c1"># Substituted dash for guessed letter</span>
+                <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;You guessed a correct letter&quot;</span><span class="p">)</span>
+                <span class="n">word_solved_so_far</span> <span class="o">=</span> <span class="n">substitute_dash_by_letter</span><span class="p">(</span><span class="n">guess</span><span class="p">,</span> <span class="n">chosen_word</span><span class="p">,</span> <span class="n">word_solved_so_far</span><span class="p">)</span>
+                <span class="n">guessed_letters</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">guess</span><span class="p">)</span>
+    
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Game End </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">check_hangman</span><span class="p">(</span><span class="n">guess</span><span class="p">):</span>
-    <span class="c1">#guess = &quot;r&quot;</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">letters_inword</span><span class="p">)):</span>
-        <span class="k">if</span> <span class="n">letters_inword</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">guess</span><span class="p">:</span>
-            <span class="n">word_completion</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">guess</span>
+<span class="k">def</span> <span class="nf">substitute_dash_by_letter</span><span class="p">(</span><span class="n">guess</span><span class="p">,</span> <span class="n">chosen_word</span><span class="p">,</span> <span class="n">word_solved_so_far</span><span class="p">):</span>
+    
+    <span class="n">position_of_letter_in_word</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">alphabet</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">chosen_word</span><span class="p">)</span> <span class="k">if</span> <span class="n">alphabet</span> <span class="o">==</span> <span class="n">guess</span><span class="p">]</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Letter &quot;</span><span class="p">,</span> <span class="n">guess</span><span class="p">,</span> <span class="s2">&quot; is &quot;</span><span class="p">,</span> <span class="n">position_of_letter_in_word</span><span class="p">,</span> <span class="s2">&quot;in this word</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;number of times the letter is in the word =&quot;</span> <span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">position_of_letter_in_word</span><span class="p">),</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="p">)</span>
+
+    <span class="n">word_as_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">word_solved_so_far</span><span class="p">)</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;word as list is : &quot;</span><span class="p">,</span> <span class="n">word_as_list</span><span class="p">,</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">position_of_letter_in_word</span><span class="p">:</span>
+        <span class="n">word_as_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">guess</span>
+        <span class="n">word_solved_so_far</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">word_as_list</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;word solved so far&quot;</span><span class="p">,</span> <span class="n">word_solved_so_far</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;dash_counter before decrement is &quot;</span><span class="p">,</span> <span class="n">dash_counter</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">dash_counter</span> <span class="o">=</span> <span class="n">dash_counter</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">position_of_letter_in_word</span><span class="p">)</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;dash counter &quot;</span><span class="p">,</span> <span class="n">dash_counter</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">word_solved_so_far</span>
+
+<span class="c1"># Main function to start the game</span>
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">word</span> <span class="o">=</span> <span class="n">get_random_word_from_the_word_list</span><span class="p">()</span>
+    <span class="n">play_word_guessing_game</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+<span class="n">main</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>hint : MAGIC
+welcome to the game
+
+Guess the word in 6 attempts
+
+_____
+
+
+dash counter  6 
+
+You guessed a correct letter
+Letter  A  is  [1] in this word
+
+number of times the letter is in the word = 1 
+
+word as list is :  [&#39;_&#39;, &#39;_&#39;, &#39;_&#39;, &#39;_&#39;, &#39;_&#39;] 
+
+word solved so far _A___ 
+
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">UnboundLocalError</span>                         Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">c:\Users\samar\vscode\SamarthKalanke\_notebooks\2023-04-08-OtherCPTdraft.ipynb Cell 1</span> in <span class="ansi-cyan-fg">&lt;cell line: 76&gt;</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
+<span class="ansi-green-fg">     &lt;a href=&#39;vscode-notebook-cell:/c%3A/Users/samar/vscode/SamarthKalanke/_notebooks/2023-04-08-OtherCPTdraft.ipynb#W0sZmlsZQ%3D%3D?line=73&#39;&gt;74&lt;/a&gt;</span>     word = get_random_word_from_the_word_list()
+<span class="ansi-green-fg">     &lt;a href=&#39;vscode-notebook-cell:/c%3A/Users/samar/vscode/SamarthKalanke/_notebooks/2023-04-08-OtherCPTdraft.ipynb#W0sZmlsZQ%3D%3D?line=74&#39;&gt;75&lt;/a&gt;</span>     play_word_guessing_game(word)
+<span class="ansi-green-intense-fg ansi-bold">---&gt; &lt;a href=&#39;vscode-notebook-cell:/c%3A/Users/samar/vscode/SamarthKalanke/_notebooks/2023-04-08-OtherCPTdraft.ipynb#W0sZmlsZQ%3D%3D?line=75&#39;&gt;76&lt;/a&gt;</span> main()
+
+<span class="ansi-green-intense-fg ansi-bold">c:\Users\samar\vscode\SamarthKalanke\_notebooks\2023-04-08-OtherCPTdraft.ipynb Cell 1</span> in <span class="ansi-cyan-fg">main</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
+<span class="ansi-green-fg">     &lt;a href=&#39;vscode-notebook-cell:/c%3A/Users/samar/vscode/SamarthKalanke/_notebooks/2023-04-08-OtherCPTdraft.ipynb#W0sZmlsZQ%3D%3D?line=72&#39;&gt;73&lt;/a&gt;</span> def main():
+<span class="ansi-green-fg">     &lt;a href=&#39;vscode-notebook-cell:/c%3A/Users/samar/vscode/SamarthKalanke/_notebooks/2023-04-08-OtherCPTdraft.ipynb#W0sZmlsZQ%3D%3D?line=73&#39;&gt;74&lt;/a&gt;</span>     word = get_random_word_from_the_word_list()
+<span class="ansi-green-intense-fg ansi-bold">---&gt; &lt;a href=&#39;vscode-notebook-cell:/c%3A/Users/samar/vscode/SamarthKalanke/_notebooks/2023-04-08-OtherCPTdraft.ipynb#W0sZmlsZQ%3D%3D?line=74&#39;&gt;75&lt;/a&gt;</span>     play_word_guessing_game(word)
+
+<span class="ansi-green-intense-fg ansi-bold">c:\Users\samar\vscode\SamarthKalanke\_notebooks\2023-04-08-OtherCPTdraft.ipynb Cell 1</span> in <span class="ansi-cyan-fg">play_word_guessing_game</span><span class="ansi-blue-intense-fg ansi-bold">(chosen_word)</span>
+<span class="ansi-green-fg">     &lt;a href=&#39;vscode-notebook-cell:/c%3A/Users/samar/vscode/SamarthKalanke/_notebooks/2023-04-08-OtherCPTdraft.ipynb#W0sZmlsZQ%3D%3D?line=43&#39;&gt;44&lt;/a&gt;</span>         else:
+<span class="ansi-green-fg">     &lt;a href=&#39;vscode-notebook-cell:/c%3A/Users/samar/vscode/SamarthKalanke/_notebooks/2023-04-08-OtherCPTdraft.ipynb#W0sZmlsZQ%3D%3D?line=44&#39;&gt;45&lt;/a&gt;</span>             # Substituted dash for guessed letter
+<span class="ansi-green-fg">     &lt;a href=&#39;vscode-notebook-cell:/c%3A/Users/samar/vscode/SamarthKalanke/_notebooks/2023-04-08-OtherCPTdraft.ipynb#W0sZmlsZQ%3D%3D?line=45&#39;&gt;46&lt;/a&gt;</span>             print (&#34;You guessed a correct letter&#34;)
+<span class="ansi-green-intense-fg ansi-bold">---&gt; &lt;a href=&#39;vscode-notebook-cell:/c%3A/Users/samar/vscode/SamarthKalanke/_notebooks/2023-04-08-OtherCPTdraft.ipynb#W0sZmlsZQ%3D%3D?line=46&#39;&gt;47&lt;/a&gt;</span>             word_solved_so_far = substitute_dash_by_letter(guess, chosen_word, word_solved_so_far)
+<span class="ansi-green-fg">     &lt;a href=&#39;vscode-notebook-cell:/c%3A/Users/samar/vscode/SamarthKalanke/_notebooks/2023-04-08-OtherCPTdraft.ipynb#W0sZmlsZQ%3D%3D?line=47&#39;&gt;48&lt;/a&gt;</span>             guessed_letters.append(guess)
+<span class="ansi-green-fg">     &lt;a href=&#39;vscode-notebook-cell:/c%3A/Users/samar/vscode/SamarthKalanke/_notebooks/2023-04-08-OtherCPTdraft.ipynb#W0sZmlsZQ%3D%3D?line=49&#39;&gt;50&lt;/a&gt;</span> print (&#34;Game End \n&#34;)
+
+<span class="ansi-green-intense-fg ansi-bold">c:\Users\samar\vscode\SamarthKalanke\_notebooks\2023-04-08-OtherCPTdraft.ipynb Cell 1</span> in <span class="ansi-cyan-fg">substitute_dash_by_letter</span><span class="ansi-blue-intense-fg ansi-bold">(guess, chosen_word, word_solved_so_far)</span>
+<span class="ansi-green-fg">     &lt;a href=&#39;vscode-notebook-cell:/c%3A/Users/samar/vscode/SamarthKalanke/_notebooks/2023-04-08-OtherCPTdraft.ipynb#W0sZmlsZQ%3D%3D?line=62&#39;&gt;63&lt;/a&gt;</span>     word_solved_so_far = &#34;&#34;.join(word_as_list)
+<span class="ansi-green-fg">     &lt;a href=&#39;vscode-notebook-cell:/c%3A/Users/samar/vscode/SamarthKalanke/_notebooks/2023-04-08-OtherCPTdraft.ipynb#W0sZmlsZQ%3D%3D?line=63&#39;&gt;64&lt;/a&gt;</span>     print (&#34;word solved so far&#34;, word_solved_so_far, &#34;\n&#34;)
+<span class="ansi-green-intense-fg ansi-bold">---&gt; &lt;a href=&#39;vscode-notebook-cell:/c%3A/Users/samar/vscode/SamarthKalanke/_notebooks/2023-04-08-OtherCPTdraft.ipynb#W0sZmlsZQ%3D%3D?line=65&#39;&gt;66&lt;/a&gt;</span> print(&#34;dash_counter before decrement is &#34;, dash_counter, &#34;\n&#34;)
+<span class="ansi-green-fg">     &lt;a href=&#39;vscode-notebook-cell:/c%3A/Users/samar/vscode/SamarthKalanke/_notebooks/2023-04-08-OtherCPTdraft.ipynb#W0sZmlsZQ%3D%3D?line=66&#39;&gt;67&lt;/a&gt;</span> dash_counter = dash_counter - len(position_of_letter_in_word)
+<span class="ansi-green-fg">     &lt;a href=&#39;vscode-notebook-cell:/c%3A/Users/samar/vscode/SamarthKalanke/_notebooks/2023-04-08-OtherCPTdraft.ipynb#W0sZmlsZQ%3D%3D?line=67&#39;&gt;68&lt;/a&gt;</span> print (&#34;dash counter &#34;, dash_counter, &#34;\n&#34;)
+
+<span class="ansi-red-intense-fg ansi-bold">UnboundLocalError</span>: local variable &#39;dash_counter&#39; referenced before assignment</pre>
+</div>
+</div>
+
 </div>
 </div>
 
